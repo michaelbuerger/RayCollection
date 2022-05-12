@@ -1,0 +1,11 @@
+*.class
+*.iml
+Raycaster1/out/*.png
+
+Raycaster2/out/
+Raycaster2/.idea/
+Raycaster2/.vscode/
+
+Raycaster4/out/
+Raycaster4/.idea/
+Raycaster4/.vscode/
