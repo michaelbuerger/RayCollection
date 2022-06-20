@@ -1,6 +1,7 @@
 *.class
 *.iml
 Raycaster1/out/*.png
+**.vscode/
 
 Raycaster2/out/
 Raycaster2/.idea/

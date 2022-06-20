@@ -6,7 +6,7 @@ import javax.imageio.ImageIO;
 import java.time.format.DateTimeFormatter;  
 import java.time.LocalDateTime;
 
-public class Raycaster
+public class Raytracer
 {
 	static final int DIM = 256;
 	static final Vec3 SENSOR_NORMAL = new Vec3(0, 0, 1);

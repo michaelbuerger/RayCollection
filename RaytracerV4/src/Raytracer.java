@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 
 import static java.lang.System.currentTimeMillis;
 
-public class Raycaster
+public class Raytracer
 {
 
 	/* Variables just to mess with */

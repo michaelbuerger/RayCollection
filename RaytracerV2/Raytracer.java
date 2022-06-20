@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 
 import static java.lang.System.currentTimeMillis;
 
-public class Raycaster
+public class Raytracer
 {
 	static final int DIM = 64;
 	static final Vec3 SENSOR_NORMAL = new Vec3(0, 0, 1);
