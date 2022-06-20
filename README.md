@@ -1,7 +1,7 @@
 # Synopsis
 This repository is a collection of software written by me intended to create photorealistic rendering techniques from scratch. Within the various projects, I explore and apply the following topics: raycasting, raytracing, photorealistic rendering, concurrent/multi-threaded programming, and GPU parallelization.
 
-To take a look at the various renders I've produced, check out renders directories within each Raycaster file e.g. 'Raycaster*/renders/'.
+To take a look at the various renders I've produced, check out renders directories within each Raytracer file e.g. 'Raytracer*/renders/'.
 
 ## The Journey
 ### Raytracer v1
