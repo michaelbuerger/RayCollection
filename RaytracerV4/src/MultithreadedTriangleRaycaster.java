@@ -1,11 +1,8 @@
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class MultithreadedTriangleRaycaster {
     public static final int NUM_THREADS = 4; // please make this number power of 2, greater than 16 doesn't seem to make a difference
@@ -13,7 +10,7 @@ public class MultithreadedTriangleRaycaster {
 
     private static ArrayList<Triangle> triangles;
 
-    // glob variables
+    // global variables
     private static int resolution;
     private static Vec3 sensorPosition, sensorDirection;
     private static double sensorWidth, outrageousRange;
@@ -57,16 +54,16 @@ public class MultithreadedTriangleRaycaster {
         int numRows = resolution / numThreads;
 
         System.out.println("Starting " + numThreads + " threads...");
-        ExecutorService es = Executors.newCachedThreadPool();
+        ExecutorService executorService = Executors.newCachedThreadPool();
 
         for(int i=0; i < numThreads; i++) {
             PixelProcessor processor = new PixelProcessor(0, resolution - 1, i * numRows, ((i+1) * numRows) - 1);
 
-            es.execute(processor);
+            executorService.execute(processor);
         }
-        es.shutdown();
+        executorService.shutdown();
         try {
-            es.awaitTermination(1, TimeUnit.DAYS); // await all threads to finish, terminates after 24 hours
+            executorService.awaitTermination(1, TimeUnit.DAYS); // await all threads to finish, terminates after 24 hours
         } catch (InterruptedException e) {
             throw new RuntimeException("A thread was interrupted, check for errors...");
         }
@@ -90,7 +87,6 @@ public class MultithreadedTriangleRaycaster {
 
         public void run()
         {
-            //System.out.println(minX + "-" + maxX + ", " + minY + "-" + maxY);
             try {
                 for(int x=minX; x <= maxX; x++) {
                     for(int y=minY; y <= maxY; y++) {

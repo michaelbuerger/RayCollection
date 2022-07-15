@@ -1,8 +1,7 @@
 /*
-TODO:
-- Sub
-- Div
-- AddEquals, SubEquals, MultEquals, DivEquals
+ * TODO:
+ * Sub, Div
+ * AddEquals, SubEquals, MultEquals, DivEquals
  */
 
 public class Vec3 {

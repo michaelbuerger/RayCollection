@@ -7,7 +7,6 @@ import javax.imageio.ImageIO;
 
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.time.LocalDateTime;
 
 import static java.lang.System.currentTimeMillis;
