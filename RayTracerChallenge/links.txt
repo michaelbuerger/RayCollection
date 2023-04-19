@@ -1,0 +1,3 @@
+https://docs.python-guide.org/writing/structure/
+https://moderngl.readthedocs.io/en/latest/topics/texture_formats.
+https://github.com/moderngl/moderngl-window/blob/master/examples/custom_config_class.py
