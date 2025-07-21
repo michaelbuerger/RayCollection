@@ -1,0 +1,18 @@
+	// Sensor/scene variables
+	static final Vec3 SENSOR_DIRECTION = (new Vec3(-0.75, -0.25, -1)).Normalized();
+	static final double SENSOR_WIDTH = 10.0;
+	static final Vec3 SENSOR_POSITION = new Vec3(3.0, 0.75, 4.0);
+	static final Vec3 BACKGROUND_COLOR = new Vec3(255, 128, 0);
+	static final double WIGGLE = 1.5;
+	static final Vec3 LIGHT_POSITION = new Vec3(1.5, 7.0, 1.0);
+	static final double LUMINOSITY = 1024;
+	static final double SHININESS = 256;
+	static final double DIFFUSE_MULTIPLIER = 0.07;
+	static final double SPECULAR_MULTIPLIER = 0.4;
+
+	static final double HYPOTHETICALLY_OUTRAGEOUS_RANGE = 200;
+	static final int P_0 = Engine.EncodeColor(BACKGROUND_COLOR);
+
+	// Model file and resolution to render and output
+	static final String MODEL_FILE_PATH = "./models/f1.obj";
+	static final int RESOLUTION = 256;

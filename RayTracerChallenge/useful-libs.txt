@@ -1,9 +1,0 @@
-moderngl - graphics library
-moderngl-window - window creation abstraction
-
-pillow - image processing
-numpy - math
-scipy - scientific computing and math
-
-matplotlib - plot drawing
-pyrr - 3d math functions using numpy

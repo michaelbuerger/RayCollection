@@ -1,0 +1,18 @@
+	// Sensor/scene variables
+	static final Vec3 SENSOR_DIRECTION = (new Vec3(0, 0, -1)).Normalized();
+	static final double SENSOR_WIDTH = 5.0;
+	static final Vec3 SENSOR_POSITION = new Vec3(0.0, 0.0, 5.0);
+	static final Vec3 BACKGROUND_COLOR = new Vec3(255, 128, 0);
+	static final double WIGGLE = 1.12;
+	static final Vec3 LIGHT_POSITION = SENSOR_POSITION.Add(new Vec3(0.25, 0.25, 0.25));
+	static final double LUMINOSITY = 1024;
+	static final double SHININESS = 128;
+	static final double DIFFUSE_MULTIPLIER = 0.07;
+	static final double SPECULAR_MULTIPLIER = 0.4;
+
+	static final double HYPOTHETICALLY_OUTRAGEOUS_RANGE = 100;
+	static final int P_0 = Engine.EncodeColor(BACKGROUND_COLOR);
+
+	// Model file and resolution to render and output
+	static final String MODEL_FILE_PATH = "./models/lil-frog.obj";
+	static final int RESOLUTION = 256;
