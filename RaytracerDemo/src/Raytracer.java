@@ -31,7 +31,7 @@ public class Raytracer
 
 	// Model file and resolution to render and output
 	static final String MODEL_FILE_PATH = "./models/lil-frog.obj";
-	static final int RESOLUTION = 48;
+	static final int RESOLUTION = 256;
 
 	public static void main(String[] args) throws IOException
 	{
