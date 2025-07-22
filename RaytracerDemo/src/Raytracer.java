@@ -16,8 +16,8 @@ public class Raytracer
 
 	// Sensor/scene variables
 	static final Vec3 SENSOR_DIRECTION = (new Vec3(0, 0, -1)).Normalized();
-	static final double SENSOR_WIDTH = 10.0;
-	static final Vec3 SENSOR_POSITION = new Vec3(0.0, 0.0, 10.0);
+	static final double SENSOR_WIDTH = 5.0;
+	static final Vec3 SENSOR_POSITION = new Vec3(0.0, 0.0, 5.0);
 	static final Vec3 BACKGROUND_COLOR = new Vec3(255, 128, 0);
 	static final double WIGGLE = 1.12;
 	static final Vec3 LIGHT_POSITION = SENSOR_POSITION.Add(new Vec3(0.25, 0.25, 0.25));
@@ -31,7 +31,7 @@ public class Raytracer
 
 	// Model file and resolution to render and output
 	static final String MODEL_FILE_PATH = "./models/lil-frog.obj";
-	static final int RESOLUTION = 256;
+	static final int RESOLUTION = 48;
 
 	public static void main(String[] args) throws IOException
 	{

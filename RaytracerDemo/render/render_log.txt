@@ -83,3 +83,4 @@ Render './models/lil-frog.obj' 256x256 8s 16 threads
 Render './models/lil-frog.obj' 256x256 6s 16 threads
 Render './models/lil-frog.obj' 256x256 8s 16 threads
 Render './models/lil-frog.obj' 256x256 7s 16 threads
+Render './models/lil-frog.obj' 256x256 7s 16 threads
